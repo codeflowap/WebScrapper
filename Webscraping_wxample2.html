@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0100)file:///D:/DataScience/Python/PythonUdemyArditSulce/Other%20files/WebScrapping/app7_webscraping.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head><meta charset="utf-8" />
 
 <title>app7_webscraping</title>
 
-<script src="./Webscraping__Example2_files/require.min.js.download"></script>
-<script src="./Webscraping__Example2_files/jquery.min.js.download"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 
@@ -13085,13 +13085,13 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="file:///D:/DataScience/Python/PythonUdemyArditSulce/Other%20files/WebScrapping/custom.css">
+<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="./Webscraping__Example2_files/MathJax.js.download"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config;executed=true">
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -13108,103 +13108,8 @@ div#notebook {
         }
     });
     </script>
-    <!-- End of mathjax configuration --><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
-</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 2px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: 1em}
-.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
-.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
-</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
-</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
-</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-</style><style type="text/css">.MathJax_Preview {color: #888}
-#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
-</style><style type="text/css">.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style></head>
-<body style=""><div id="MathJax_Message" style="display: none;"></div>
+    <!-- End of mathjax configuration --></head>
+<body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13217,17 +13122,17 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">requests</span><span class="o">,</span> <span class="nn">re</span>
 <span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
 
-<span class="n">r</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/"</span><span class="p">)</span>
+<span class="n">r</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/&quot;</span><span class="p">)</span>
 <span class="n">c</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">content</span>
 
-<span class="n">soup</span><span class="o">=</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="s2">"html.parser"</span><span class="p">)</span>
+<span class="n">soup</span><span class="o">=</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
 
-<span class="nb">all</span><span class="o">=</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"div"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"propertyRow"</span><span class="p">})</span>
+<span class="nb">all</span><span class="o">=</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;propertyRow&quot;</span><span class="p">})</span>
 
-<span class="nb">all</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"h4"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"propPrice"</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span>
+<span class="nb">all</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;h4&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;propPrice&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 
-<span class="n">page_nr</span><span class="o">=</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"Page"</span><span class="p">})[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">page_nr</span><span class="p">,</span><span class="s2">"number of pages were found"</span><span class="p">)</span>
+<span class="n">page_nr</span><span class="o">=</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;Page&quot;</span><span class="p">})[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">page_nr</span><span class="p">,</span><span class="s2">&quot;number of pages were found&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13259,45 +13164,45 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span><span class="o">=</span><span class="p">[]</span>
-<span class="n">base_url</span><span class="o">=</span><span class="s2">"http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/t=0&amp;s="</span>
+<span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/t=0&amp;s=&quot;</span>
 <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">page_nr</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span> <span class="p">)</span>
-    <span class="n">r</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">+</span><span class="s2">".html"</span><span class="p">)</span>
+    <span class="n">r</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">base_url</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;.html&quot;</span><span class="p">)</span>
     <span class="n">c</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">content</span>
-    <span class="c1">#c=r.json()["list"]</span>
-    <span class="n">soup</span><span class="o">=</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="s2">"html.parser"</span><span class="p">)</span>
-    <span class="nb">all</span><span class="o">=</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"div"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"propertyRow"</span><span class="p">})</span>
+    <span class="c1">#c=r.json()[&quot;list&quot;]</span>
+    <span class="n">soup</span><span class="o">=</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+    <span class="nb">all</span><span class="o">=</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;propertyRow&quot;</span><span class="p">})</span>
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">all</span><span class="p">:</span>
         <span class="n">d</span><span class="o">=</span><span class="p">{}</span>
-        <span class="n">d</span><span class="p">[</span><span class="s2">"Address"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"propAddressCollapse"</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Address&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;propAddressCollapse&quot;</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Locality"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"propAddressCollapse"</span><span class="p">})[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Locality&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;propAddressCollapse&quot;</span><span class="p">})[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Locality"</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
-        <span class="n">d</span><span class="p">[</span><span class="s2">"Price"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"h4"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"propPrice"</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Locality&quot;</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
+        <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;h4&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;propPrice&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Beds"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"infoBed"</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Beds&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;infoBed&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Beds"</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Beds&quot;</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
     
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Area"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"infoSqFt"</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Area&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;infoSqFt&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Area"</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Area&quot;</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
     
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Full Baths"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"infoValueFullBath"</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Full Baths&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;infoValueFullBath&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Full Baths"</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Full Baths&quot;</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
 
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Half Baths"</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">,</span><span class="s2">"infoValueHalfBath"</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Half Baths&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;infoValueHalfBath&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="n">d</span><span class="p">[</span><span class="s2">"Half Baths"</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
-        <span class="k">for</span> <span class="n">column_group</span> <span class="ow">in</span> <span class="n">item</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"div"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"columnGroup"</span><span class="p">}):</span>
-            <span class="k">for</span> <span class="n">feature_group</span><span class="p">,</span> <span class="n">feature_name</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">column_group</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"featureGroup"</span><span class="p">}),</span><span class="n">column_group</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">"span"</span><span class="p">,{</span><span class="s2">"class"</span><span class="p">:</span><span class="s2">"featureName"</span><span class="p">})):</span>
-                <span class="k">if</span> <span class="s2">"Lot Size"</span> <span class="ow">in</span> <span class="n">feature_group</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
-                    <span class="n">d</span><span class="p">[</span><span class="s2">"Lot Size"</span><span class="p">]</span><span class="o">=</span><span class="n">feature_name</span><span class="o">.</span><span class="n">text</span>
+            <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Half Baths&quot;</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
+        <span class="k">for</span> <span class="n">column_group</span> <span class="ow">in</span> <span class="n">item</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;columnGroup&quot;</span><span class="p">}):</span>
+            <span class="k">for</span> <span class="n">feature_group</span><span class="p">,</span> <span class="n">feature_name</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">column_group</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;featureGroup&quot;</span><span class="p">}),</span><span class="n">column_group</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;span&quot;</span><span class="p">,{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;featureName&quot;</span><span class="p">})):</span>
+                <span class="k">if</span> <span class="s2">&quot;Lot Size&quot;</span> <span class="ow">in</span> <span class="n">feature_group</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+                    <span class="n">d</span><span class="p">[</span><span class="s2">&quot;Lot Size&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">feature_name</span><span class="o">.</span><span class="n">text</span>
         <span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
 
@@ -13316,6 +13221,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
+
 </pre>
 </div>
 </div>
@@ -13348,281 +13254,281 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[{'Address': '0 Gateway',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Price': '$725,000'},
- {'Address': '1003 Winchester Blvd.',
-  'Area': None,
-  'Beds': '4',
-  'Full Baths': '4',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': '0.21 Acres',
-  'Price': '$452,900'},
- {'Address': '600 Talladega',
-  'Area': '3,154',
-  'Beds': '5',
-  'Full Baths': '3',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Price': '$396,900'},
- {'Address': '3239 Spearhead Way',
-  'Area': '3,076',
-  'Beds': '4',
-  'Full Baths': '3',
-  'Half Baths': '1',
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': 'Under 1/2 Acre, ',
-  'Price': '$389,900'},
- {'Address': '522 Emerald Street',
-  'Area': '1,172',
-  'Beds': '3',
-  'Full Baths': '3',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': 'Under 1/2 Acre, ',
-  'Price': '$254,000'},
- {'Address': "1302 Veteran's Drive",
-  'Area': '1,932',
-  'Beds': '4',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': '0.27 Acres',
-  'Price': '$252,900'},
- {'Address': '1021 Cypress Cir',
-  'Area': '1,676',
-  'Beds': '4',
-  'Full Baths': '3',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': 'Under 1/2 Acre, ',
-  'Price': '$210,000'},
- {'Address': '913 Madison Dr',
-  'Area': '1,344',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': 'Under 1/2 Acre, ',
-  'Price': '$209,000'},
- {'Address': '1344 Teton Street',
-  'Area': '1,920',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': 'Under 1/2 Acre, ',
-  'Price': '$199,900'},
- {'Address': '4 Minnies Lane',
-  'Area': '1,664',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Rock Springs, WY 82901',
-  'Lot Size': '2.02 Acres',
-  'Price': '$196,900'},
- {'Address': '9339 Sd 26900',
-  'Area': '2,560',
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$1,700,000'},
- {'Address': 'RR674P13 Hwy 377',
-  'Area': '2,000',
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$1,100,000'},
- {'Address': '0 Hwy 41',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$1,080,000'},
- {'Address': '9339 Sd 26900',
-  'Area': '2,560',
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$908,350'},
- {'Address': 'CR450 Hwy 377',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$905,000'},
- {'Address': 'Cr 240 Cr 240',
-  'Area': '1,398',
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$695,000'},
- {'Address': 'RR674 Hwy 377',
-  'Area': '1,738',
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$605,000'},
- {'Address': '9770a Sd 26900',
-  'Area': '1,080',
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$559,805'},
- {'Address': 'Lot17 CR 2630',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$504,000'},
- {'Address': 'Tr12,16 CR 520',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Rocksprings, TX 78880',
-  'Price': '$410,000'},
- {'Address': '32575 S Shadow Mountain Road',
-  'Area': '2,318',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$299,900'},
- {'Address': '32750 S Shangrila Drive',
-  'Area': '2,120',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$167,500'},
- {'Address': '0000 Black Canyon Highway',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '5 Acres',
-  'Price': '$150,000'},
- {'Address': '34775 S CHOLLA Drive',
-  'Area': '1,220',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$129,500'},
- {'Address': '33403 S. HA-WA-SI TERRACE',
-  'Area': '2,000',
-  'Beds': '4',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'BLACK CANYON CITY, AZ 85324',
-  'Price': '$129,000'},
- {'Address': '34263 S Bertha Street',
-  'Area': '2,260',
-  'Beds': '5',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$80,000'},
- {'Address': '33160 S Canyon Road',
-  'Area': '1,248',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$77,900'},
- {'Address': '19421 E Todd Evans Road',
-  'Area': '1,404',
-  'Beds': '3',
-  'Full Baths': '2',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$70,500'},
- {'Address': '18688 E AGUA Vista',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '0.7 Acres',
-  'Price': '$70,000'},
- {'Address': '50600 N Old Black Canyon Road',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '3 Acres',
-  'Price': '$67,500'},
- {'Address': '20101 E SQUAW VALLEY Road',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$54,900'},
- {'Address': '33259 S Canyon Road',
-  'Area': '1,056',
-  'Beds': '3',
-  'Full Baths': '1',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Price': '$45,600'},
- {'Address': '34558 S ROADRUNNER RD',
-  'Area': '784',
-  'Beds': '2',
-  'Full Baths': '1',
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': 'Under 1/2 Acre',
-  'Price': '$40,000'},
- {'Address': '19260 E Scenic Loop Road',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '2.35 Acres',
-  'Price': '$30,000'},
- {'Address': '19000 E MAREN Avenue',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '2.05 Acres',
-  'Price': '$29,000'},
- {'Address': '19350 E SAGUARO Drive',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '0.73 Acres',
-  'Price': '$28,995'},
- {'Address': '20650 E Amethyst Place',
-  'Area': None,
-  'Beds': None,
-  'Full Baths': None,
-  'Half Baths': None,
-  'Locality': 'Black Canyon City, AZ 85324',
-  'Lot Size': '0.31 Acres',
-  'Price': '$15,000'}]</pre>
+<pre>[{&#39;Address&#39;: &#39;0 Gateway&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Price&#39;: &#39;$725,000&#39;},
+ {&#39;Address&#39;: &#39;1003 Winchester Blvd.&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: &#39;4&#39;,
+  &#39;Full Baths&#39;: &#39;4&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;0.21 Acres&#39;,
+  &#39;Price&#39;: &#39;$452,900&#39;},
+ {&#39;Address&#39;: &#39;600 Talladega&#39;,
+  &#39;Area&#39;: &#39;3,154&#39;,
+  &#39;Beds&#39;: &#39;5&#39;,
+  &#39;Full Baths&#39;: &#39;3&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Price&#39;: &#39;$396,900&#39;},
+ {&#39;Address&#39;: &#39;3239 Spearhead Way&#39;,
+  &#39;Area&#39;: &#39;3,076&#39;,
+  &#39;Beds&#39;: &#39;4&#39;,
+  &#39;Full Baths&#39;: &#39;3&#39;,
+  &#39;Half Baths&#39;: &#39;1&#39;,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;Under 1/2 Acre, &#39;,
+  &#39;Price&#39;: &#39;$389,900&#39;},
+ {&#39;Address&#39;: &#39;522 Emerald Street&#39;,
+  &#39;Area&#39;: &#39;1,172&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;3&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;Under 1/2 Acre, &#39;,
+  &#39;Price&#39;: &#39;$254,000&#39;},
+ {&#39;Address&#39;: &#34;1302 Veteran&#39;s Drive&#34;,
+  &#39;Area&#39;: &#39;1,932&#39;,
+  &#39;Beds&#39;: &#39;4&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;0.27 Acres&#39;,
+  &#39;Price&#39;: &#39;$252,900&#39;},
+ {&#39;Address&#39;: &#39;1021 Cypress Cir&#39;,
+  &#39;Area&#39;: &#39;1,676&#39;,
+  &#39;Beds&#39;: &#39;4&#39;,
+  &#39;Full Baths&#39;: &#39;3&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;Under 1/2 Acre, &#39;,
+  &#39;Price&#39;: &#39;$210,000&#39;},
+ {&#39;Address&#39;: &#39;913 Madison Dr&#39;,
+  &#39;Area&#39;: &#39;1,344&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;Under 1/2 Acre, &#39;,
+  &#39;Price&#39;: &#39;$209,000&#39;},
+ {&#39;Address&#39;: &#39;1344 Teton Street&#39;,
+  &#39;Area&#39;: &#39;1,920&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;Under 1/2 Acre, &#39;,
+  &#39;Price&#39;: &#39;$199,900&#39;},
+ {&#39;Address&#39;: &#39;4 Minnies Lane&#39;,
+  &#39;Area&#39;: &#39;1,664&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rock Springs, WY 82901&#39;,
+  &#39;Lot Size&#39;: &#39;2.02 Acres&#39;,
+  &#39;Price&#39;: &#39;$196,900&#39;},
+ {&#39;Address&#39;: &#39;9339 Sd 26900&#39;,
+  &#39;Area&#39;: &#39;2,560&#39;,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$1,700,000&#39;},
+ {&#39;Address&#39;: &#39;RR674P13 Hwy 377&#39;,
+  &#39;Area&#39;: &#39;2,000&#39;,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$1,100,000&#39;},
+ {&#39;Address&#39;: &#39;0 Hwy 41&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$1,080,000&#39;},
+ {&#39;Address&#39;: &#39;9339 Sd 26900&#39;,
+  &#39;Area&#39;: &#39;2,560&#39;,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$908,350&#39;},
+ {&#39;Address&#39;: &#39;CR450 Hwy 377&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$905,000&#39;},
+ {&#39;Address&#39;: &#39;Cr 240 Cr 240&#39;,
+  &#39;Area&#39;: &#39;1,398&#39;,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$695,000&#39;},
+ {&#39;Address&#39;: &#39;RR674 Hwy 377&#39;,
+  &#39;Area&#39;: &#39;1,738&#39;,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$605,000&#39;},
+ {&#39;Address&#39;: &#39;9770a Sd 26900&#39;,
+  &#39;Area&#39;: &#39;1,080&#39;,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$559,805&#39;},
+ {&#39;Address&#39;: &#39;Lot17 CR 2630&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$504,000&#39;},
+ {&#39;Address&#39;: &#39;Tr12,16 CR 520&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Rocksprings, TX 78880&#39;,
+  &#39;Price&#39;: &#39;$410,000&#39;},
+ {&#39;Address&#39;: &#39;32575 S Shadow Mountain Road&#39;,
+  &#39;Area&#39;: &#39;2,318&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$299,900&#39;},
+ {&#39;Address&#39;: &#39;32750 S Shangrila Drive&#39;,
+  &#39;Area&#39;: &#39;2,120&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$167,500&#39;},
+ {&#39;Address&#39;: &#39;0000 Black Canyon Highway&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;5 Acres&#39;,
+  &#39;Price&#39;: &#39;$150,000&#39;},
+ {&#39;Address&#39;: &#39;34775 S CHOLLA Drive&#39;,
+  &#39;Area&#39;: &#39;1,220&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$129,500&#39;},
+ {&#39;Address&#39;: &#39;33403 S. HA-WA-SI TERRACE&#39;,
+  &#39;Area&#39;: &#39;2,000&#39;,
+  &#39;Beds&#39;: &#39;4&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;BLACK CANYON CITY, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$129,000&#39;},
+ {&#39;Address&#39;: &#39;34263 S Bertha Street&#39;,
+  &#39;Area&#39;: &#39;2,260&#39;,
+  &#39;Beds&#39;: &#39;5&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$80,000&#39;},
+ {&#39;Address&#39;: &#39;33160 S Canyon Road&#39;,
+  &#39;Area&#39;: &#39;1,248&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$77,900&#39;},
+ {&#39;Address&#39;: &#39;19421 E Todd Evans Road&#39;,
+  &#39;Area&#39;: &#39;1,404&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;2&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$70,500&#39;},
+ {&#39;Address&#39;: &#39;18688 E AGUA Vista&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;0.7 Acres&#39;,
+  &#39;Price&#39;: &#39;$70,000&#39;},
+ {&#39;Address&#39;: &#39;50600 N Old Black Canyon Road&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;3 Acres&#39;,
+  &#39;Price&#39;: &#39;$67,500&#39;},
+ {&#39;Address&#39;: &#39;20101 E SQUAW VALLEY Road&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$54,900&#39;},
+ {&#39;Address&#39;: &#39;33259 S Canyon Road&#39;,
+  &#39;Area&#39;: &#39;1,056&#39;,
+  &#39;Beds&#39;: &#39;3&#39;,
+  &#39;Full Baths&#39;: &#39;1&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Price&#39;: &#39;$45,600&#39;},
+ {&#39;Address&#39;: &#39;34558 S ROADRUNNER RD&#39;,
+  &#39;Area&#39;: &#39;784&#39;,
+  &#39;Beds&#39;: &#39;2&#39;,
+  &#39;Full Baths&#39;: &#39;1&#39;,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;Under 1/2 Acre&#39;,
+  &#39;Price&#39;: &#39;$40,000&#39;},
+ {&#39;Address&#39;: &#39;19260 E Scenic Loop Road&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;2.35 Acres&#39;,
+  &#39;Price&#39;: &#39;$30,000&#39;},
+ {&#39;Address&#39;: &#39;19000 E MAREN Avenue&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;2.05 Acres&#39;,
+  &#39;Price&#39;: &#39;$29,000&#39;},
+ {&#39;Address&#39;: &#39;19350 E SAGUARO Drive&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;0.73 Acres&#39;,
+  &#39;Price&#39;: &#39;$28,995&#39;},
+ {&#39;Address&#39;: &#39;20650 E Amethyst Place&#39;,
+  &#39;Area&#39;: None,
+  &#39;Beds&#39;: None,
+  &#39;Full Baths&#39;: None,
+  &#39;Half Baths&#39;: None,
+  &#39;Locality&#39;: &#39;Black Canyon City, AZ 85324&#39;,
+  &#39;Lot Size&#39;: &#39;0.31 Acres&#39;,
+  &#39;Price&#39;: &#39;$15,000&#39;}]</pre>
 </div>
 
 </div>
@@ -14107,7 +14013,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"Output.csv"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;Output.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14117,10 +14023,9 @@ div#notebook {
 </div>
     </div>
   </div>
-
+</body>
 
  
 
 
-
-</body></html>
+</html>
